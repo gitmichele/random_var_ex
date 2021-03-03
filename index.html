@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // LIFETIME SUPPLY CALCULATOR
+        var snackName = prompt('Tell me your favourite snack');
+        var snackPerDay = prompt('How many ' + snackName + ' do you eat every day?');
+        var yearsEating = prompt('for how many years will you eat ' + snackName + ' ?');
+        var currentYear = new Date().getFullYear();
+        var finalYear = parseInt(currentYear) + parseInt(yearsEating);
+        var totalSnack = snackPerDay * 365 * yearsEating;
+        
+        console.log('by ' +finalYear + ' you will have eaten ' + totalSnack + ' ' + snackName);
+
+    </script>
+    
+</body>
+</html>
